@@ -6,7 +6,8 @@ var char2Norm={
     "úüũùûUÚÜŨÙÛ":"u",
     "ñÑńǹ":"n"
 };
-function normalize(text){
+function normalize(textI){
+    var text=textI.toLowerCase();
     var r="";
     for(var i=0;i<text.length;i++){
 	var c=text[i];
